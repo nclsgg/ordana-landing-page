@@ -38,13 +38,13 @@ const HowItWorksSection = () => {
           {steps.map((step, index) => {
             const Icon = step.icon;
             return (
-              <div key={index} className="relative">
+              <div key={index} className="relative h-full">
                 {/* Connection line */}
                 {index < steps.length - 1 && (
                   <div className="hidden md:block absolute top-16 left-[60%] w-[80%] h-0.5 bg-linear-to-r from-primary to-primary-light opacity-30" />
                 )}
                 
-                <div className="relative bg-card p-8 rounded-xl shadow-card hover:shadow-elegant transition-smooth border border-border">
+                <div className="relative bg-card p-8 rounded-xl shadow-card hover:shadow-elegant transition-smooth border border-border h-full flex flex-col">
                   <div className="absolute -top-6 left-8 bg-primary text-primary-foreground w-12 h-12 rounded-lg flex items-center justify-center font-bold text-lg shadow-card">
                     {step.number}
                   </div>
@@ -57,7 +57,7 @@ const HowItWorksSection = () => {
                     {step.title}
                   </h3>
                   
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed grow">
                     {step.description}
                   </p>
                 </div>

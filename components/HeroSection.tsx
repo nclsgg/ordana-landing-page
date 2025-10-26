@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 opacity-10 bg-cover bg-center"/>
       
       <div className="container mx-auto px-4 py-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid xl:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="text-white space-y-6 animate-fade-in">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
@@ -28,15 +28,16 @@ const HeroSection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button variant="cta" size="xl" className="group" asChild>
-                <a href="https://wa.me/5521976878566?text=Olá,%20gostaria%20de%20impulsionar%20meu%20negócio%20adquirindo%20uma%20Landing%20Page.%20Poderia%20me%20dar%20mais%20informações?" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                  Quero Expandir Meu Negócio
+              <Button variant="cta" size="xl" className="group w-full sm:w-auto" asChild>
+                <a href="https://wa.me/5521976878566?text=Olá,%20gostaria%20de%20impulsionar%20meu%20negócio%20adquirindo%20uma%20Landing%20Page.%20Poderia%20me%20dar%20mais%20informações?" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
+                  <span className="hidden sm:inline">Quero Expandir Meu Negócio</span>
+                  <span className="sm:hidden">Expandir Meu Negócio</span>
                   <ArrowRight className="group-hover:translate-x-1 transition-smooth" />
                 </a>
               </Button>
               
-              <Button variant="outline" size="xl" className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white hover:text-black" asChild>
-                <a href="#how-it-works">
+              <Button variant="outline" size="xl" className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white hover:text-black w-full sm:w-auto" asChild>
+                <a href="#how-it-works" className="flex items-center justify-center">
                   Ver Como Funciona
                 </a>
               </Button>
@@ -60,7 +61,7 @@ const HeroSection = () => {
           </div>
           
           {/* Visual */}
-          <div className="relative lg:block hidden">
+          <div className="relative xl:block hidden">
             <div className="relative rounded-2xl overflow-hidden shadow-elegant">
               <div className="aspect-video bg-white/10 backdrop-blur-sm flex items-center justify-center p-12">
                 <div className="text-center space-y-4">

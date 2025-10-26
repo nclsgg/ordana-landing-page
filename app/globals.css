@@ -191,4 +191,24 @@
   .text-primary-foreground\/80 { color: hsl(var(--primary-foreground) / 0.8); }
   
   .border-primary-foreground\/20 { border-color: hsl(var(--primary-foreground) / 0.2); }
+
+  /* Container padding - maior para mobile e web */
+  .container {
+    padding-left: 1.5rem;  /* 24px no mobile */
+    padding-right: 1.5rem;
+  }
+  
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 2rem;  /* 32px no tablet */
+      padding-right: 2rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 3rem;  /* 48px no desktop */
+      padding-right: 3rem;
+    }
+  }
 }
