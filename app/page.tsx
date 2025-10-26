@@ -6,11 +6,13 @@ import HowItWorksSection from "@/components/HowItWorksSection";
 import BenefitsSection from "@/components/BenefitsSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/next"
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       <Header />
+      <Analytics />
       <HeroSection />
       <ProblemsSection />
       <SolutionsSection />
