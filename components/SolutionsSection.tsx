@@ -2,6 +2,8 @@
 
 import { Button } from "@/components/ui/button";
 import { Check, ArrowRight } from "lucide-react";
+import Image from "next/image";
+import LandingImage from "../public/madeireira.png";
 
 const benefits = [
   "Landing page profissional e responsiva",
@@ -56,26 +58,26 @@ const SolutionsSection = () => {
           <div className="relative">
             <div className="bg-card rounded-2xl shadow-elegant p-8 border border-border">
               <div className="aspect-video bg-primary/5 rounded-lg mb-6 flex items-center justify-center">
-                <div className="text-center space-y-2">
-                  <div className="w-20 h-20 mx-auto rounded-full bg-primary/10 flex items-center justify-center">
-                    <span className="text-4xl">🚀</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground">Sua Landing Page</p>
-                </div>
+                <Image
+                  src={LandingImage}
+                  alt="Imagem de destaque"
+                  layout="responsive"
+                  className="relative rounded-2xl overflow-hidden shadow-elegant"
+                />
               </div>
               
               <div className="space-y-3">
                 <div className="flex items-center justify-between p-3 bg-background rounded-lg">
                   <span className="text-sm text-foreground">Taxa de Conversão</span>
-                  <span className="text-success font-semibold">+85%</span>
+                  <span className="text-success font-semibold">+20%</span>
                 </div>
                 <div className="flex items-center justify-between p-3 bg-background rounded-lg">
                   <span className="text-sm text-foreground">Novos Leads</span>
-                  <span className="text-success font-semibold">+150%</span>
+                  <span className="text-success font-semibold">+55%</span>
                 </div>
                 <div className="flex items-center justify-between p-3 bg-background rounded-lg">
                   <span className="text-sm text-foreground">Credibilidade</span>
-                  <span className="text-success font-semibold">+200%</span>
+                  <span className="text-success font-semibold">+100%</span>
                 </div>
               </div>
             </div>

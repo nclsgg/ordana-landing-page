@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import Image from "next/image";
 import Logo from "../public/logo.png";
+import LandingImage from "../public/madeireira.png";
 
 const HeroSection = () => {
   return (
@@ -62,20 +63,14 @@ const HeroSection = () => {
           
           {/* Visual */}
           <div className="relative xl:block hidden">
-            <div className="relative rounded-2xl overflow-hidden shadow-elegant">
-              <div className="aspect-video bg-white/10 backdrop-blur-sm flex items-center justify-center p-12">
-                <div className="text-center space-y-4">
-                  <div className="w-32 h-32 mx-auto rounded-full bg-success/20 flex items-center justify-center">
-                    <span className="text-6xl">🚀</span>
-                  </div>
-                  <p className="text-white text-xl font-semibold">Sua Landing Page Profissional</p>
-                </div>
-              </div>
-              <div className="absolute inset-0 bg-linear-to-t from-primary/50 to-transparent" />
-            </div>
-            
+            <Image
+              src={LandingImage}
+              alt="Imagem de destaque"
+              layout="responsive"
+              className="relative rounded-2xl overflow-hidden shadow-elegant"
+            />
             {/* Floating card */}
-            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-elegant animate-fade-in">
+            {/* <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-elegant animate-fade-in">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-success flex items-center justify-center">
                   <span className="text-2xl">📈</span>
@@ -85,7 +80,7 @@ const HeroSection = () => {
                   <p className="text-sm text-muted-foreground">Mais clientes em 3 meses</p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

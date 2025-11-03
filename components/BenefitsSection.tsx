@@ -5,7 +5,7 @@ const benefits = [
     icon: TrendingUp,
     title: "Mais Clientes",
     description: "Aumente significativamente o número de leads qualificados e conversões para seu negócio.",
-    stat: "+150%",
+    stat: "+55%",
   },
   {
     icon: Shield,
@@ -23,7 +23,7 @@ const benefits = [
     icon: Globe,
     title: "Alcance Ampliado",
     description: "Seja encontrado por clientes em toda sua região, não apenas no boca a boca.",
-    stat: "+300%",
+    stat: "100%",
   },
   {
     icon: Star,
